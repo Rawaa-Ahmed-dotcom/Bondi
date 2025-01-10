@@ -1,0 +1,199 @@
+@import "./reset.css";
+@import "./components.css";
+.landing-page {
+    min-height: calc(100vh - 72px);
+    background-color: var(--dark-color);
+}
+.landing-page h2 {
+    font-size: 2em;
+    margin: .67em 0em;
+    color: var(--white-color);
+}
+
+.row .feat .icon-holder .icon {
+    color: var(--green-color);
+    font-size: 4em;
+    left: 50%;
+    transform: translatex(-50%);
+    
+}
+.row .feat .icon-holder {
+    height: 200px;
+}
+.row .feat .icon-holder .number {
+    
+    color: var(--section-color);
+    font-size: 13em;
+    left: 50%;
+    transform: translatex(-50%);
+}
+.row .feat h4 {
+    color: var(--yellow-color);
+    margin-top: 1em;
+}
+.our-work {
+    background-color: var(--section-color);
+}
+.our-work .container .links {
+    gap: 1em;
+    list-style: none;
+    padding-left: 0;
+}
+.our-work .container .links li:first-child a {
+    padding: 0.5em 1em;
+
+}
+.our-work .container .links li a:not(.main-btn) {
+    color: black;
+    transition: 0.3s;
+}
+.our-work .container .links li a:not(.main-btn):hover {
+    color: var(--green-color);
+}
+.our-work .container .row .box {
+    position: relative;
+    overflow: hidden;
+}
+.our-work .container .row .box img {
+    
+    border: 5px solid white;
+}
+.our-work .container .row .box::before {
+content: attr(data-work);
+position: absolute;
+display: flex;
+justify-content: center;
+align-items: center;
+width: calc(100% - 10px);
+height: calc(100% - 10px);
+background-color: rgba(51, 209, 204, 70%);
+top: 50%;
+left: calc(-100% - 5px);
+transform: translate(-50%,-50%);
+transition: 0.3s;
+
+color: white;
+font-weight: bold;
+font-size: 1.5em;
+}
+.our-work .container .row .box:hover::before {
+left: 50%;
+
+}
+.our-work .container .more {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.our-work .container .more a {
+    padding: 0.5em 1em;
+
+
+}
+.about .container .main-title  p:last-child {
+    min-width: 200px;
+
+}
+.about .container .row {
+    gap: 1.5em;
+}
+.about .container .row .link a{
+    padding: 0.5em 1em;
+    
+}
+.team {
+    background-color: var(--section-color);
+
+}
+.team .container .header {
+
+}
+.team .container .header h2 {
+    color: var(--yellow-color);                                         
+}
+.team .container .row .member {
+    background-color: white;
+    position: relative;
+    transition: 0.3s;
+}
+.team .container .row .member:hover {
+    transform: translatey(-10px);
+    box-shadow: 0 0 10px #ccc;
+}
+.team .container .row .member:hover{
+    transform: scale(1.05);
+}
+.team .container .row .member .image img {
+    opacity: 0.8;
+    transition: 0.3s;
+}
+.team .container .row .member:hover .image img {
+opacity: 1;
+}
+.team .container .row .member .text h2{
+    background-color: var(--green-color);
+    color: white;
+    padding: 0.5em ;
+}
+.team .container .row .member .text p {
+padding: 1em 0.5em;
+}
+.team .container .row .member .image {
+    position: relative;
+    overflow:hidden;
+    
+}
+
+.tech .container .row .image {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    transition: 0.3s;
+}
+.tech .container .row .image:hover {
+    transform: translatey(-10px);
+}
+.start-project {
+    background-color: var(--dark-color);
+}
+.start-project .container {
+    min-width: 200px;
+}
+.start-project h2 {
+    color: white;
+}
+.blog .container .row .card img {
+    opacity: 0.8;
+    transition: 0.3s;
+}
+.blog .container .row .card {
+    transition: 0.3s;
+}
+.blog .container .row .card:hover {
+box-shadow: 0 0 10px #ccc;
+transform: translateY(-10px);
+}
+.blog .container .row .card:hover img {
+    opacity: 1;
+}
+.subscribe {
+    background-color: var(--dark-color);
+    
+}
+.subscribe .container .row .email{
+width: 100%;
+background-color: transparent;
+border: none;
+outline: none;
+
+position: relative;
+padding: 0.5em;
+border-bottom: 1px solid rgba(255,255,255,50%);
+accent-color: white;
+color: white;
+}
+.subscribe .container .row .email::placeholder {
+    color: rgba(255,255,255,50%);
+    
+}
+
